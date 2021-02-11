@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+header h1 {
+    font-family: "Gentium Basic", serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #444444;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-style: italic;
+    color: #444444;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+header .title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+hr {
+    color: #555555;
+    width: 50%;
+    margin: 10px auto 0 auto;
+    border-width: 2px;
+    border-color: #555555;
+}
+
+header nav ul {
+    margin: 0 auto;
+    text-align: center; /*IE*/
+    width: fit-content;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 16px 16px;
+}
+
+header img {
+    width: 100%;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #172029;
+    text-decoration: none;
+}
+
+.section-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.gallery-links .container img {
+    height: 200px;
+    width: auto;
+    margin-left: -30px;
+}
+
+.circle-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    -webkit-flex-basis: 200px;
+    -moz-flex-basis: 200px;
+    flex-basis: 200px;
+}
+
+.post-header {
+    /*kujundus*/
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 10px #111111;
+
+    /*positsioneerimine*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: space-around;
+    -o-flex-flow: row wrap;
+}
+
+footer {
+    width: calc(100% - 60px);
+    padding: 30px;
+    background-color: lightgray;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+footer p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer-sm {
+    width: 32px;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (min-width: 950px) {
+    .divider {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about-flex-item {
+        width: 50%;
+        height: auto;
+    }
+
+    .about-flex-item img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .gallery-links .container img {
+        height: 300px;
+        width: auto;
+    }
+
+    .circle-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .gallery-image {
+        margin: 10px;
+        position: relative;
+        text-align: center;
+        -webkit-flex-basis: 300px;
+        -moz-flex-basis: 300px;
+        flex-basis: 300px;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    header h1 {
+        font-family: "Gentium Basic", serif;
+        font-weight: 600;
+        font-size: 40px;
+        color: #444444;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    header h2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 5px;
+        font-style: italic;
+        color: #444444;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    header .title {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .section-header {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: #172029;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 949px) {
+    #kokad {
+        display: none;
+    }
+}
